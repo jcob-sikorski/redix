@@ -85,7 +85,7 @@ def handle_userinput(user_question):
 
 def main():
     load_dotenv()
-    st.set_page_config(page_title="Ask Reddit Anything")
+    st.set_page_config(page_title="Ask Reddit Anything", initial_sidebar_state="expanded")
     st.write(css, unsafe_allow_html=True)
 
     if "conversation" not in st.session_state:
